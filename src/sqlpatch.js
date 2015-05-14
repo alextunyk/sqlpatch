@@ -6,7 +6,7 @@ var fs = require('fs');
 var path = require('path');
 var pkg = require('../package');
 var toposort = require('toposort');
-var extend = require('extend');
+var extend = require('util')._extend;
 var Mustache = require('mustache');
 
 function sqlpatch(fileList, writer, options) {
